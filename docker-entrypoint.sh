@@ -4,7 +4,7 @@
 
 set -e
 
-until nc -z -v -w30 $DATABASE_HOST 3306
+until nc -z -v -w30 $DATABASE_HOST 25060
 do
   echo "Waiting for database connection..."
   # wait for 5 seconds before check again
