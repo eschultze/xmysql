@@ -15,7 +15,7 @@ services:
       - ./tests/docker-sample.sql:/docker-entrypoint-initdb.d/sample.sql
       - db-data:/var/lib/mysql
     ports:
-      - "3306:3306"
+      - "25060:25060"
 
   db-api: &db-api
     build:
